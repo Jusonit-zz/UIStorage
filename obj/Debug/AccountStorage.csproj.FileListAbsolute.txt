@@ -8,3 +8,13 @@ C:\Users\Junio\source\repos\AccountStorage\obj\Debug\AccountStorage.csproj.Gener
 C:\Users\Junio\source\repos\AccountStorage\obj\Debug\AccountStorage.csproj.CoreCompileInputs.cache
 C:\Users\Junio\source\repos\AccountStorage\obj\Debug\AccountStorage.exe
 C:\Users\Junio\source\repos\AccountStorage\obj\Debug\AccountStorage.pdb
+C:\Users\Junio\source\repos\UIStorage\bin\Debug\AccountStorage.exe.config
+C:\Users\Junio\source\repos\UIStorage\bin\Debug\AccountStorage.exe
+C:\Users\Junio\source\repos\UIStorage\bin\Debug\AccountStorage.pdb
+C:\Users\Junio\source\repos\UIStorage\obj\Debug\AccountStorage.csprojAssemblyReference.cache
+C:\Users\Junio\source\repos\UIStorage\obj\Debug\AccountStorage.Form1.resources
+C:\Users\Junio\source\repos\UIStorage\obj\Debug\AccountStorage.Properties.Resources.resources
+C:\Users\Junio\source\repos\UIStorage\obj\Debug\AccountStorage.csproj.GenerateResource.cache
+C:\Users\Junio\source\repos\UIStorage\obj\Debug\AccountStorage.csproj.CoreCompileInputs.cache
+C:\Users\Junio\source\repos\UIStorage\obj\Debug\AccountStorage.exe
+C:\Users\Junio\source\repos\UIStorage\obj\Debug\AccountStorage.pdb

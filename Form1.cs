@@ -58,9 +58,17 @@ namespace AccountStorage
                 button2.Visible = false;
                 label1.Visible = false;
                 textBox1.Visible = false;
+                button3.Visible = true;
+                button5.Visible = true;
+                button6.Visible = true;
             }
             else
                 MessageBox.Show("Incorrect");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
