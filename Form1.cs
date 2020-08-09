@@ -20,7 +20,7 @@ namespace AccountStorage
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            button1.Text = "Close";  //when form loads.. do these properties
+            closeButton.Text = "Close";  //when form loads.. do these properties
         }
 
         public static class Globals
@@ -30,9 +30,6 @@ namespace AccountStorage
 
             public static FileStream fileStream = null;
             public static bool fileOpened = false;
-
-            public static string userinput = "";
-
 
             /* Notes
             public const Int32 BUFFER_SIZE = 512; // Unmodifiable
@@ -92,13 +89,20 @@ namespace AccountStorage
             if (password == "password")
             {
                 MessageBox.Show("Welcome Back");
+                //master password items
                 button2.Visible = false;
                 label1.Visible = false;
                 textBox1.Visible = false;
-                button3.Visible = true;
-                button5.Visible = true;
-                button6.Visible = true;
-                textBox2.Visible = true;
+
+                //authentication items
+                addButton.Visible = true;
+                removeButton.Visible = true;
+                txtUser.Visible = true;
+                txtPass.Visible = true; ;
+                listView1.Visible = true;
+                labelUser.Visible = true;
+                labelUser.Visible = true;
+                
                 
                 Globals.fileStream = File.Open(Globals.path, File.Exists(Globals.path) ? FileMode.Append : FileMode.OpenOrCreate);
                 Globals.fileOpened = true;
@@ -108,23 +112,22 @@ namespace AccountStorage
 
         }
 
-        //add button
-        private void button3_Click(object sender, System.EventArgs e)
-        {
-            Globals.userinput = textBox2.Text;
-            MessageBox.Show(Globals.userinput);
-        }
-
-        //delete button
+        //remove button
         private void button6_Click(object sender, EventArgs e)
         {
 
         }
 
-        //adding list item textbox
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        //add button
+        private void button3_Click_1(object sender, EventArgs e)
         {
-           
+            if (string.IsNullOrEmpty(txtUser.Text) || string.IsNullOrEmpty(txtPass.Text))
+                return;
+
+            
+            string[] row = { txtUser.Text, txtPass.Text };
+            var listViewItem = new ListViewItem(row);
+            listView1.Items.Add(listViewItem);
         }
     }
 }
